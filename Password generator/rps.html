@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random password generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+            <div class="container">
+            <header>
+                <h1>Generate a random <span class="white-text">password</span></h1>
+                <p>Better safe than sorry!</p>
+                <div class="flex">
+                    <input type="number" placeholder="Min 5 - Max 20" id="char-number">
+                    <button id="generate-btn">⚡ Generate passwords</button>
+                </div>
+                <p id="error-message1">Error, please choose a longer password!</p>
+                <p id="error-message2">Error, please choose a shorter password!</p>
+            </header>
+
+            <main>
+                    <input type="text" id="password1-el" value="-">
+                    <input type="text" id="password2-el" value="-">
+                    <input type="text" id="password3-el" value="-">
+                    <input type="text" id="password4-el" value="-">
+            </main>
+        </div>
+
+    </body>
+    <script src="script/script.js"></script>
+</html>
