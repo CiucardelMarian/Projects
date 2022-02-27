@@ -166,11 +166,10 @@ input[type="number"] {
         place-items: center;
     }
     body {
-        margin: 0;
-        display: grid;
-        justify-content: center;
+        display: block;
     }
     .container {
+        margin: 0 auto;
         height: 47rem;
     }
 }
