@@ -208,6 +208,6 @@ input[type='number'] {
     #copied {
         top: 93%;
         left: 39%;
-        display: block;
+        display: none;
     }
 }
