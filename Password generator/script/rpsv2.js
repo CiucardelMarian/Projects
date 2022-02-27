@@ -11,6 +11,7 @@ const decreseEl = document.getElementById('decrese-btn')
 const charNumberInput = document.getElementById('char-number')
 const errorMessage = document.getElementById('error-msg')
 const copyMsg = document.getElementById('copied')
+let width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 let charNumber = 0
 let password=''
 
@@ -53,8 +54,10 @@ generateBtn.addEventListener('click', function() {
 passwordField1.addEventListener('click', function() {
         navigator.clipboard.writeText(passwordField1.textContent)
         copyMsg.style.display = 'block'
+        if ( 480 < width) {
         copyMsg.style.top = '20%'
         copyMsg.style.left = '35%'
+        }
         setTimeout(hideCopyMessage, 1000)
 }
 )
@@ -62,8 +65,10 @@ passwordField1.addEventListener('click', function() {
 passwordField2.addEventListener('click', function() {
         navigator.clipboard.writeText(passwordField2.textContent)
         copyMsg.style.display = 'block'
+        if ( 480 < width) {
         copyMsg.style.top = '20%'
         copyMsg.style.left = '85%'
+        }
         setTimeout(hideCopyMessage, 1000)
 }
 )
@@ -71,8 +76,10 @@ passwordField2.addEventListener('click', function() {
 passwordField3.addEventListener('click', function() {
         navigator.clipboard.writeText(passwordField3.textContent)
         copyMsg.style.display = 'block'
+        if ( 480 < width) {
         copyMsg.style.top = '70%'
         copyMsg.style.left = '35%'
+        }
         setTimeout(hideCopyMessage, 1000)
 }
 )
@@ -80,8 +87,10 @@ passwordField3.addEventListener('click', function() {
 passwordField4.addEventListener('click', function() {
         navigator.clipboard.writeText(passwordField4.textContent)
         copyMsg.style.display = 'block'
+        if ( 480 < width) {
         copyMsg.style.top = '70%'
         copyMsg.style.left = '85%'
+        }
         setTimeout(hideCopyMessage, 1000)
 }
 )
@@ -89,5 +98,11 @@ passwordField4.addEventListener('click', function() {
 function hideCopyMessage() {
     copyMsg.style.display = 'none'
 }
+
+window.addEventListener('resize', function() {
+    width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        copyMsg.style.top = '93%'
+        copyMsg.style.left = '40%'
+})
 
 

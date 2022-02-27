@@ -166,8 +166,6 @@ input[type='number'] {
 
 #copied {
     position: absolute;
-    top: 20%;
-    left: 35%;
     color: white;
     background-color: #10b981;
     padding: 0.2rem 0.5rem;
@@ -206,5 +204,9 @@ input[type='number'] {
 
     #error-msg {
         text-align: center;
+    }
+    #copied {
+        top: 93%;
+        left: 40%;
     }
 }
