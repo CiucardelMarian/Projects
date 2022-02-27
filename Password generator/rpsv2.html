@@ -41,15 +41,17 @@
                     <div class="password-input-container">
                         <p>How many characters?</p>
                         <div class="char-input-container">
-                            <button>-</button>
-                            <input type="number" />
-                            <button>+</button>
+                            <button id="decrese-btn">-</button>
+                            <input type="number" id="char-number" value="8" />
+                            <button id="increse-btn">+</button>
                         </div>
                     </div>
                 </div>
+                <p id="error-msg">Please choose between 8 and 20!</p>
             </div>
             <div class="password-field">
-                <p>
+                <p id="copied">Copied!</p>
+                <p id="password-1">
                     <svg
                         width="20"
                         height="5"
@@ -71,7 +73,7 @@
                         />
                     </svg>
                 </p>
-                <p>
+                <p id="password-2">
                     <svg
                         width="20"
                         height="5"
@@ -93,7 +95,7 @@
                         />
                     </svg>
                 </p>
-                <p>
+                <p id="password-3">
                     <svg
                         width="20"
                         height="5"
@@ -115,7 +117,7 @@
                         />
                     </svg>
                 </p>
-                <p>
+                <p id="password-4">
                     <svg
                         width="20"
                         height="5"
@@ -140,4 +142,5 @@
             </div>
         </div>
     </body>
+    <script src="script\rpsv2.js"></script>
 </html>
