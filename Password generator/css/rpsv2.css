@@ -15,7 +15,8 @@ body {
 .container {
     max-width: 34.375rem;
     min-width: 34.375rem;
-    border: 2px red solid;
+    border-radius: 1rem;
+    border: 1px solid #10b981;
     background-color: #1f2937;
     padding: 3.25rem;
 }
@@ -52,7 +53,7 @@ body {
     margin-top: 0;
 }
 
-button {
+#generate-password {
     background-color: #10b981;
     width: 13.9375rem;
     height: 2.625rem;
@@ -68,7 +69,13 @@ button {
     border: none;
     border-radius: 0.4rem;
     color: #ffffff;
-    margin-top: 3rem;
+    margin-top: 0.8rem;
+    cursor: pointer;
+}
+
+#generate-password:active {
+    transform: translateY(1px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .password-field {
@@ -85,4 +92,64 @@ button {
     place-content: center;
     border-radius: 0.4rem;
     color: #55f991;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.password-input-container {
+    display: grid;
+    place-items: center;
+}
+
+.char-input-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.password-input-container p {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.password-input-container input {
+    width: 2rem;
+    height: 2rem;
+}
+
+.password-input-container input {
+    width: 3rem;
+    background-color: #273549;
+    border: none;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    font-family: "Inter";
+    text-align: center;
+    font-size: 1rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.password-input-container button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.password-input-container button:active {
+    transform: translateY(1px);
 }
