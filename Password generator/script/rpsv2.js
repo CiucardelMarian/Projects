@@ -12,7 +12,7 @@ const charNumberInput = document.getElementById('char-number')
 const errorMessage = document.getElementById('error-msg')
 const copyMsg = document.getElementById('copied')
 let width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-let charNumber = 0
+let charNumber = 8
 let password=''
 
 increseEl.addEventListener('click', function() {
