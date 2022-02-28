@@ -120,8 +120,6 @@ body {
 }
 
 #totalAmount-el {
-    position: absolute;
-    left: 90%;
     font-family: 'Inter';
     font-size: 36px;
     font-style: normal;
@@ -159,7 +157,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 6.375rem auto 5rem;
+    margin: 4.5rem auto 5rem;
 }
 
 #send-invoice-btn svg {
