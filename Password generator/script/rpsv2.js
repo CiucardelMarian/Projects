@@ -15,9 +15,9 @@ let width = Math.max(document.documentElement.clientWidth, window.innerWidth || 
 let charNumber = 8
 let password=''
 
-charNumberInput.onchange = function() {
+charNumberInput.addEventListener('change', function(){
     charNumber = charNumberInput.value
-}
+})
 increseEl.addEventListener('click', function() {
     charNumber++
     charNumberInput.value = charNumber
